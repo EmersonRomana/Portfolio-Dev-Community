@@ -1,0 +1,156 @@
+.presentation {
+    text-align: center;
+    padding-block: 72px 56px;
+
+    p {
+        font: var(--Subtitle);
+        color: var(--main-red);
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font: var(--title-md);
+        color: var(--base-gray-100);
+    }
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-bottom: 114px;   
+}
+
+.pages {
+    width: 330px;
+    padding: 12px;
+    background-color: var(--base-gray-400);
+    border-radius: 12px;
+    transition: outline-color 0.4s ease, outline-offset 0.4s ease;
+}
+
+.pages:hover {
+    outline: 1.5px solid var(--base-gray-300);
+    outline-offset: 2px; /* afasta levemente pra dar destaque */
+}
+
+.pages > img {
+    width: 306px;
+    height: 156px;
+    object-fit: cover; /* preenche a área sem distorcer — pode cortar bordas */
+    border-radius: 8px;
+}
+
+.pages .infor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 4px;
+}
+
+.infor > h3 {
+    font: var(--title-sm);
+    color: var(--base-gray-100);
+    margin-bottom: 8px;
+}
+
+.infor > p {
+    font: var(--Text-sm);
+}
+
+#service {
+    background-color: var(--base-gray-600);
+}
+
+#service > .presentation {
+    padding-top: 80px;
+}
+
+#grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 56px;
+    padding-bottom: 128px;
+}
+
+#grid .card-grid {
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--base-gray-500);
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-bottom: 8px;
+    }
+}
+
+#contact {
+    background: url(../assets/img/Background_Contacts.png) no-repeat center/cover;
+}
+
+#text-contact {
+    padding-block: 128px 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#text-contact > h3 {
+    color: var(--main-purple);
+    font: var(--Subtitle);
+}
+
+#text-contact > h2 {
+    font: var(--title-md);
+    color: var(--base-gray-100);
+    padding-block: 8px;
+}
+
+#text-contact > p {
+    color: var(--base-gray-200);
+    font: var(--Text-md);
+}
+
+#card-contac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 200px;
+    
+}
+
+.redes-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    padding: 20px;
+    background: var(--base-gray-400);
+    border-radius: 8px;
+    transition: filter 0.6s ease;
+
+    p {
+        color: var(--base-gray-200);
+        font: var(--Text-md);
+    }
+}
+
+.redes-contact:hover {
+    outline: 1.5px solid var(--main-blue);
+    color: var(--main-blue);
+
+    p {
+        color: var(--main-blue);
+    }
+}
+
+.redes-contact:hover img {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(84%) saturate(600%) hue-rotate(190deg);
+}

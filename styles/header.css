@@ -1,0 +1,86 @@
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--base-gray-500);
+}
+
+#hero {
+    padding-block: 120px 57px;
+    width: 100%;
+}
+
+#profile {
+    width: 680px;
+    margin: 0 auto 80px;
+    text-align: center;
+    
+}
+
+#img-profile { 
+    position: relative; /* position: relative no contêiner #img-profile: isso define o ponto de referência para qualquer elemento position: absolute dentro dele. */
+    width: fit-content;
+    margin: 0 auto 56px;   
+}
+
+#img-profile > img:nth-child(1) {
+    width: 100%;
+    position: relative; /* Define como referência para posicionamento absoluto dos elementos internos */
+    z-index: 0; /* Garante que esta imagem fique abaixo das demais sobrepostas */
+    padding: 4px; /* Distancia da borda e imagem */
+    border: 3px solid var(--main-red); /* cor da borda (verde suave, por exemplo) */
+    border-radius: 50%;        /* borda arredondada */
+    transform: translate(20px, px); /* deslocamento sutil */
+}
+
+#img-profile > img:nth-child(2) {
+    position: absolute; /* position: absolute na imagem verde, permite posicioná-la em relação ao contêiner pai, ou seja, embaixo à direita da "foto amor". */
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* usado corretamente para garantir que a imagem verde fique por cima. */
+    width: 40px; /* Definimos uma largura (width) adequada para a imagem verde, o que evita que ela fique gigante ou desproporcional. */
+}
+
+#sub {
+    font: var(--Subtitle);
+    color: var(--base-gray-200);
+    margin-bottom: 8px;
+}
+
+h1 {
+    color: var(--base-gray-100);
+    font: var(--Title-lg);
+    margin-bottom: 20px;
+}
+
+#list-tag {
+    display: flex;
+    gap: 16px;
+    justify-self: center;
+}
+
+.tag {
+    background-color: var(--base-gray-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: auto;
+    height: 40px;
+    border-radius: 999px;
+    padding-inline: 16px;
+    margin-bottom: 94px;
+
+    img {
+        width: 30px;
+    }
+}
+
+#scroll {
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}

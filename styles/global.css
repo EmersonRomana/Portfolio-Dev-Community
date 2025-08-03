@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wdth,wght@0,75..125,700;1,75..125,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+
+
+/* ------------------------------------------------Declaração Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* highlight (Padding azul quando está no cel, quando toca botão) */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ------Root (cores,fontes e tamanhos pré definidos */
+body {
+    /* ------------------------------------------------------Font title
+
+    -----ordem de valores: weight / size / line-height / font-family */
+    --font-family-asap: "Asap", sans-serif;
+    --Title-lg: 700 56px/120% var(--font-family-asap);
+    --title-md: 700 24px/120% var(--font-family-asap);
+    --title-sm: 700 16px/120% var(--font-family-asap);
+    
+    /* -----------------------------------------Font name
+    -----ordem de valores: weight / size / line-height / font-family */
+    --font-family-inco: "Inconsolata", monospace;
+    --Subtitle: 400 20px/120% var(--font-family-inco);
+
+    /* -----------------------------------------Font text
+    ordem de valores: weight / size / line-height / font-family */
+    --font-family-text: "Maven Pro", sans-serif;
+    --Text-md: 400 16px/140% var(--font-family-text);
+    --Text-sm: 400 14px/140% var(--font-family-text);
+
+    /* ----------------------------------------------Cores Gerais */
+
+    /* ----------------------------------------------Principal */
+    --main-red: #E3646E;
+    --main-purple:#BB72E9;
+    --main-blue: #3996DB;
+    --main-green: #82BC4F;
+    --main-yellow: #EABD5F;
+
+    
+    /* ----------------------------------------------Base */
+    --base-gray-100: #E2E4E9;
+    --base-gray-200: #C0C4CE;
+    --base-gray-300: #878EA1;
+    --base-gray-400: #292C34;
+    --base-gray-500: #16181D;
+    --base-gray-600: #0D0E11;
+}
+
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+/* -----------------------------------------------Declaração Body Global */
+body {
+    background-color: var(--base-gray-600);
+    font: var(--Text-sm);
+    color: var(--base-gray-200);
+}
+
+
+/* -------------------------------------------Declaração container Global */
+.container {
+    width: 1040px;
+    margin: auto;
+}
+
+/* -------------------------------------------------------Fundo do Header */
+#bg-general {
+    background: url("../assets/img/Background_Intro.png") no-repeat center/cover;
+    height: 100vh;
+}
+
+
+/* ---------------------------------------Declaração a todos os parágrafos */
+p {
+    font: var(--Text-sm);
+    color:var(--base-gray-300)
+}
+
+.bg-m {
+    background-color: var(--base-gray-500);
+}
+
+
+
+
+
+
